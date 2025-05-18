@@ -75,7 +75,7 @@ def nettoyage(df):
 def chargement(df, db_url):
     engine = create_engine(db_url)
     df.to_sql('meteo', engine, if_exists='append', index=False)
-    print("Données chargées dans Supabase")
+    print("Données chargées dans Railway")
 
 if __name__ == "__main__":
     db_url = db_url = f"postgresql://postgres:TmhoXkrmVnaigqfhIwHoMzEYrFAZMPZd@tramway.proxy.rlwy.net:50532/railway"
